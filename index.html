@@ -19,11 +19,11 @@
 	</header>
 	<main>
 		<section>
-			<h2>there is an emulator built in try to figure it out you fuckhead</h2>
-			<p>do something you fat dick(roms here https://github.com/theclashman2/GBA-Emulator/tree/gh-pages/Binaries)</p>
+			<h2>hell</h2>
+			<p>roms here https://github.com/theclashman2/GBA-Emulator/tree/gh-pages/Binaries</p>
 		</section>
 		<section>
-			<h2>fill out this form and get free vbucks</h2>
+			<h2>fill out this form and get free fetty</h2>
 			<form>
 				<label for="name">name and birthday:</label>
 				<input type="text" id="name" name="name"><br>
@@ -42,31 +42,63 @@
 		<a href="https://bevindooker.github.io/money/" target="_blank">
   		<button type="button">goguardian block</button>
 		</a>
-		<form id="passwordForm">
-    		<label for="password">Enter the password:</label>
-    		<input type="password" id="password" required>
-    		<button type="submit">Submit</button>
-		</form>
+		<style>
+        /* Style for the text box */
+        #password {
+            padding: 8px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease-in-out;
+        }
 
-		<script>
-    		document.getElementById("passwordForm").onsubmit = function(event) {
-        		event.preventDefault(); // Prevent the form from submitting
+        /* Style for the text box when focused */
+        #password:focus {
+            border-color: #007bff; /* Change to the color you want for the highlight effect */
+            outline: none; /* Remove default focus outline */
+        }
 
-        		// Get the entered password
-        		var passwordInput = document.getElementById("password").value;
+        /* Style for the submit button */
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff; /* Change to the color you want for the button */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
-        		// Replace "your_correct_password" with the actual correct password
-        		var correctPassword = "admin";
+<!-- The password input form -->
+<form id="passwordForm">
+    <label for="password">enter command</label>
+    <input type="password" id="password" required>
+    <button type="submit">submit</button>
+</form>
 
-        		// Check if the entered password is correct
-        		if (passwordInput === correctPassword) {
-            		// Redirect to another website if the password is correct
-            		window.location.href = "https://bevindooker.github.io/pokeeeemooooonnn.github.io/";
-        		} else {
-            		alert("go away you gay monkey");
-        		}
-    		};
-		</script>
+<script>
+    document.getElementById("passwordForm").onsubmit = function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+
+        // Get the entered password
+        var passwordInput = document.getElementById("password").value;
+
+        // Define the correct passwords and corresponding URLs
+        var passwordsAndUrls = {
+            "emulator": "https://bevindooker.github.io/pokeeeemooooonnn.github.io/",
+            "kill": "https://bevindooker.github.io/happy/"
+        };
+
+        // Check if the entered password is correct and redirect if so
+        if (passwordsAndUrls.hasOwnProperty(passwordInput)) {
+            window.location.href = passwordsAndUrls[passwordInput];
+        } else {
+            alert("go away");
+        }
+    };
+</script>
 	</main>
 	<footer>
 		<p>&copy; 2023 bevindooker. All rights reserved.</p>
