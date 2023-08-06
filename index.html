@@ -138,6 +138,77 @@
     };
 </script>
 	</main>
+	<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #game-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #dino {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="dino"></div>
+    </div>
+
+    <script>
+        // Dino Game Logic
+        const dino = document.getElementById('dino');
+        let isJumping = false;
+
+        function jump() {
+            if (!isJumping) {
+                isJumping = true;
+                let position = 0;
+                const jumpInterval = setInterval(() => {
+                    if (position >= 150) {
+                        clearInterval(jumpInterval);
+                        let downInterval = setInterval(() => {
+                            if (position <= 0) {
+                                clearInterval(downInterval);
+                                isJumping = false;
+                            } else {
+                                position -= 5;
+                                dino.style.bottom = position + 'px';
+                            }
+                        }, 20);
+                    } else {
+                        position += 5;
+                        dino.style.bottom = position + 'px';
+                    }
+                }, 20);
+            }
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.code === 'Space' || event.key === ' ') {
+                jump();
+            }
+        });
+    </script>
 	<footer>
 		<p>&copy; 2023 bevindooker. All rights reserved.</p>
 	</footer>
