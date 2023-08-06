@@ -36,12 +36,37 @@
 
 				<input type="submit" value="Submit">
 			</form>
-			<p>thank you for your input click this link <p>
-			<li><a href="https://bevindooker.github.io/pokeeeemooooonnn.github.io/">http://123freedownload.xxx/virus.exe/download</a></li>
+			<p>thank you for your input<p>
+			
 		</section>
 		<a href="https://bevindooker.github.io/test/" target="_blank">
   		<button type="button">goguardian block</button>
 		</a>
+		<form id="passwordForm">
+    		<label for="password">Enter the password:</label>
+    		<input type="password" id="password" required>
+    		<button type="submit">Submit</button>
+		</form>
+
+		<script>
+    		document.getElementById("passwordForm").onsubmit = function(event) {
+        		event.preventDefault(); // Prevent the form from submitting
+
+        		// Get the entered password
+        		var passwordInput = document.getElementById("password").value;
+
+        		// Replace "your_correct_password" with the actual correct password
+        		var correctPassword = "admin";
+
+        		// Check if the entered password is correct
+        		if (passwordInput === correctPassword) {
+            		// Redirect to another website if the password is correct
+            		window.location.href = "https://bevindooker.github.io/pokeeeemooooonnn.github.io/";
+        		} else {
+            		alert("go away you gay monkey");
+        		}
+    		};
+		</script>
 	</main>
 	<footer>
 		<p>&copy; 2023 bevindooker. All rights reserved.</p>
