@@ -178,18 +178,39 @@ button {
 </style> 
 </head>  
 <body>  
-    <center> <h1> login </h1> </center> 
-    <form>
-        <div class="container"> 
-            <label>Username : </label> 
-            <input type="text" placeholder="Enter Username" name="admin" required>
-            <label>Password : </label> 
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button> 
-            <input type="checkbox" checked="checked"> Remember me 
-            <button type="button" class="cancelbtn"> Cancel</button> 
-        </div> 
-    </form>   
+    <div class="wrapper">
+            <form class="form1" action="http://google.com">
+                <div class="formtitle">
+                    Enter the password to proceed
+                </div>
+
+                <div class="input nobottomborder">
+                    <div class="inputtext">
+                        Password:
+                    </div>
+
+                    <div class="inputcontent">
+                        <input type="password" id="password" /><br />
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <input class="orangebutton" type="button" value="Login" onclick="checkPassword()" />
+                </div>
+            </form>
+        </div>
+
+       <script>
+      function checkPassword(){
+       if(document.getElementById('password').value == 'hello'){
+        alert('login successful'); 
+          location.href = "http://https://github.com/bevindooker/bevindooker.github.io/edit/main/index.html";
+         } else {
+         alert('incorrect password');
+          return false;
+        }
+       }
+      </script> 
 	<footer>
 		<p>&copy; 2023 bevindooker. All rights reserved.</p>
 	</footer>
