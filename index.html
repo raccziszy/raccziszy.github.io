@@ -120,12 +120,25 @@
 
 <!-- The password input form -->
 <form id="passwordForm">
-    <label for="password">enter command</label>
+    <label for="password">enter command but dont type "bruh"</label>
     <input type="password" id="password" required>
     <button type="submit">submit</button>
 </form>
 
 <script>
+    document.head = document.head || document.getElementsByTagName('head')[0];
+
+    function changeFavicon(src) {
+    var link = document.createElement('link'),
+    oldLink = document.getElementById('dynamic-favicon');
+    link.id = 'dynamic-favicon';
+    link.rel = 'shortcut icon';
+    link.href = src;
+    if (oldLink) {
+        document.head.removeChild(oldLink);
+    }
+        document.head.appendChild(link);
+    }
     document.getElementById("passwordForm").onsubmit = function(event) {
         event.preventDefault(); // Prevent the form from submitting
 
@@ -140,11 +153,18 @@
 	    "superemu": "https://bevindooker.github.io/gba/"
         };
 
-        // Check if the entered password is correct and redirect if so
+        // Check if the entered password is correct and redirect if so but i copied offa myself
         if (passwordsAndUrls.hasOwnProperty(passwordInput)) {
             window.location.href = passwordsAndUrls[passwordInput];
-        } else {
-            alert("go away");
+        }
+        else if(passwordInput == "bruh"){
+            var btn = document.getElementsByTagName('button')[0];
+            btn.onclick = function() {
+            changeFavicon('https://upload.wikimedia.org/wikipedia/commons/f/f1/Pornhub-logo.svg');
+            };
+        }
+        else{
+            window.location.href = "https://blocked.goguardian.com/teacher/block.html/";
         }
     };
 </script>
