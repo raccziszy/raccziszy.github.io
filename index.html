@@ -226,12 +226,11 @@ button {
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if(username == "abcd" && password == "pass12345"){
-          authorised = true;
-        }else{ // username or password do not match
-          authorised = false;
-          //alert user
+        if((username == "abcd") && (password == "pass12345")){
+		return true;
+	}else{
           alert("Sorry, password is incorrect.");
+		return false;
         }
         //return result
         return authorised;
