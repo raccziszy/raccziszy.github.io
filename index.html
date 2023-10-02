@@ -219,8 +219,6 @@ button {
     
     //Following function gets values of the username and password fields and checks to see if they match a hard coded username and password 
       function authenticate(){
-        bool authorised;
-        
         //get input values
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
@@ -232,9 +230,7 @@ button {
 	}else{
           alert("Sorry, password is incorrect.");
 	return false;
-        }
-        //return result
-        return authorised;
+	}
       }
     </script>
 
