@@ -190,11 +190,11 @@ button {
 </style> 
 </head>  
 <body>  
-    <!-- 
+   <!-- 
     Added onsubmit attribute to form so that it will trigger the JS function (authenticate). 
     if the function returns false it will prevent the form from submitting 
 -->
-<form action="https://identifiesaspen.github.io/testing02/" onsubmit="return authenticate()">
+<form action="https://stackoverflow.com/" onsubmit="return authenticate()">
       <label for="username">Username</label>
       <!-- added IDs to the inputs -->
       <input
@@ -226,12 +226,12 @@ button {
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if(username == "administrator" && password == "williamandsimon123"){
+        if(username == "abcd" && password == "pass12345"){
           authorised = true;
         }else{ // username or password do not match
           authorised = false;
           //alert user
-          alert("who are you get out");
+          alert("Sorry, password is incorrect.");
         }
         //return result
         return authorised;
