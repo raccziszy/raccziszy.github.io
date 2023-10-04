@@ -235,10 +235,6 @@ button {
 	      return idkwhyineedthislmao;
       }
     </script>
-	<div class="box">
-</body>
-<html>
-  <head>
 	<center>
 	<a style="cursor: pointer; padding-left: 10%;" onclick="return load();">new game</a>
 	<div id="canvas"></div>	
@@ -615,27 +611,13 @@ button {
 	//calling load method
 	load();
   //-->
-		var counterContainer = document.querySelector(".website-counter");
-var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
-
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-}
-counterContainer.innerHTML = visitCount;
-
-// Adding onClick event listener
-resetButton.addEventListener("click", () => {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-  counterContainer.innerHTML = visitCount;
-});
   </script>
+	
+<div class="box">
+</body>
+<html>
+  <head>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
