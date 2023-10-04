@@ -226,11 +226,11 @@ button {
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if((username == "admin") && (password == "password")){
+        if((username == "username") && (password == "password")){
 		alert("Congratulations, u r correct!");
 		return true;
 	}else{
-          alert("get out");
+          alert("Sorry, password is incorrect.");
 	return false;
 	}
 	      return idkwhyineedthislmao;
@@ -614,39 +614,20 @@ button {
   //-->
   </script>
 	
+<div class="box">
 </body>
 <html>
   <head>
-    <script>
-	    var counterContainer = document.querySelector(".website-counter");
-	    var resetButton = document.querySelector("#reset");
-	    var visitCount = localStorage.getItem("page_view");
-
-	    // Check if page_view entry is present
-	    if (visitCount) {
-  	    visitCount = Number(visitCount) + 1;
-  	    localStorage.setItem("page_view", visitCount);
-	    } else {
-  	    visitCount = 1;
-  	    localStorage.setItem("page_view", 1);
-		}
-       counterContainer.innerHTML = visitCount;
-
-      // Adding onClick event listener
-       resetButton.addEventListener("click", () => {
-        visitCount = 1;
-        localStorage.setItem("page_view", 1);
-      counterContainer.innerHTML = visitCount;
-       });
-    </script>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>Addiction counter (Reload to increase addiction):</div>
+    <div class="box">Addiction counter (Reload to increase addiction):</div>
     <div class="website-counter"></div>
     <button type="button">100 addiction<button>
   </body>
 </html>
+</div>
 	<footer>
 		<p>&copy; 2023 bevindooker. All rights reserved.</p>
 	</footer>
