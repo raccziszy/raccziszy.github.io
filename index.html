@@ -193,8 +193,7 @@ button {
     Added onsubmit attribute to form so that it will trigger the JS function (authenticate). 
     if the function returns false it will prevent the form from submitting 
 -->
-	<h3> Better games forum (includes gladihopper & tanuki sunset)</h3>
-	<form action="https://stackoverflow.com/" onsubmit="return authenticate()">
+<form action="loggedin.html" onsubmit="return authenticate()">
       <label for="username">Username</label>
       <!-- added IDs to the inputs -->
       <input
@@ -214,27 +213,30 @@ button {
       />
       <button type="submit">Submit</button>
     </form>
-	<script>
+    
+    <script>
+    
     //Following function gets values of the username and password fields and checks to see if they match a hard coded username and password 
       function authenticate(){
+        var authorised;
+        
         //get input values
-	      bool authenticate();
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if((username == "admin") && (password == "password")){
-		alert("Congratulations, u r correct!");
-		return true;
-	}else{
-          alert("get out");
-	return false;
-	}
-	      return authenticate();
+        if(username == "admin" && password == "williamandsimon"){
+          authorised = true;
+        }else{ // username or password do not match
+          authorised = false;
+          //alert user
+          alert("get the hell out");
+        }
+        //return result
+        return authorised;
       }
     </script>
 	
-<div class="box">
 </body>
 <html>
   <head>
@@ -247,7 +249,6 @@ button {
     <button type="button">100 addiction<button>
   </body>
 </html>
-</div>
 	<footer>
 		<p>&copy; 2023 bevindooker. All rights reserved.</p>
 	</footer>
