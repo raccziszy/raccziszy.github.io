@@ -193,7 +193,7 @@ button {
     Added onsubmit attribute to form so that it will trigger the JS function (authenticate). 
     if the function returns false it will prevent the form from submitting 
 -->
-<form action="loggedin.html" onsubmit="return authenticate()">
+<form action="https://stackoverflow.com/" onsubmit="return authenticate()">
       <label for="username">Username</label>
       <!-- added IDs to the inputs -->
       <input
@@ -226,10 +226,9 @@ button {
         
         //check to see if the password and username match
         if(username == "admin" && password == "williamsimon"){
-		alert("ifuknowuknow");
-		return true;
+          authorised = true;
         }else{ // username or password do not match
-          return false;
+          authorised = false;
           //alert user
           alert("get the hell out");
         }
