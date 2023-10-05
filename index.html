@@ -226,16 +226,14 @@ button {
         
         //check to see if the password and username match
         if(username == "admin" && password == "williamsimon"){
-		authorized = true;
-          return authorized;
+          return true;
         }else{ // username or password do not match
-		authorized = false;
-          return authorized;
+		return false;
           //alert user
           alert("get the hell out");
         }
         //return result
-        return authorized.
+        return authorized;
       }
     </script>
 	
