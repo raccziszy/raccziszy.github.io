@@ -226,10 +226,13 @@ button {
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if((username == "abcd") && (password == "pass12345")){
+        if(username == "abcd"){
+		if(password == "password"){
 		alert("Congratulations, u r correct!");
 		return true;
-	}else{
+		}
+	}
+	else{
           alert("Sorry, password is incorrect.");
 	return false;
 	}
