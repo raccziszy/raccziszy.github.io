@@ -8,11 +8,12 @@
 </head>
 <body>
 	<header>
-		<h1>hell</h1>
+		<h1>welcome to hell</h1>
 		<nav>
 			<ul>
 				<li><a href="https://bevindooker.github.io/eaglercrafttest/">eagler</a></li>
-				<li><a href="https://bevindooker.github.io/retrobowl/">retrobowl</a></li>																		
+				<li><a href="https://bevindooker.github.io/retrobowl/">retrobowl</a></li>
+				<li><a href="https://bevindooker.github.io/slope/">slope</a></li>
 				<li><a href="https://bevindooker.github.io/tunnelrush/">tunnelrush</a></li>
 				<li><a href="https://bevindooker.github.io/cookieclicker/">cookieclicker</a></li>
                                 <li><a href="https://bevindooker.github.io/basketrandom/">basketrandom</a></li>
@@ -188,11 +189,13 @@ button {
     } 
 </style> 
 </head>  
-<!-- 
+<body>  
+   <!-- 
     Added onsubmit attribute to form so that it will trigger the JS function (authenticate). 
     if the function returns false it will prevent the form from submitting 
 -->
-<form action="loggedin.html" onsubmit="return authenticate()">
+	<h3>Gladihoppers & other games forum</h3>
+<form action="https://stackoverflow.com/" onsubmit="return authenticate()">
       <label for="username">Username</label>
       <!-- added IDs to the inputs -->
       <input
@@ -217,41 +220,37 @@ button {
     
     //Following function gets values of the username and password fields and checks to see if they match a hard coded username and password 
       function authenticate(){
-        bool authorised = false;
-        
         //get input values
+	      bool idkwhyineedthislmao;
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
         if((username == "abcd") && (password == "pass12345")){
+		alert("Congratulations, u r correct!");
 		return true;
-          alert("yo what r u doing");
-        }else{ // username or password do not match
-		return false;
-          authorised = false;
-          //alert user
-          alert("get out");
-        }
-        //return result
-        return authorised;
-	      return false;
+	}else{
+          alert("Sorry, password is incorrect.");
+	return false;
+	}
+	      return idkwhyineedthislmao;
       }
     </script>
-<html>
-  <head>
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="box">Addiction counter (Reload to increase addiction):</div>
-    <div class="website-counter"></div>
-    <button type="button">100 addiction<button>
-  </body>
-</html>
+
 	<footer>
 		<p>&copy; 2023 bevindooker. All rights reserved.</p>
 	</footer>
+</body>
+<html>
+  <head>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div>Addiction counter (reload for more addiction):</div>
+    <div class="website-counter"></div>
+  </body>
+</html>
 
 
 <!-- https://bevindooker.github.io/pokeeeemooooonnn.github.io/ -->
