@@ -221,20 +221,23 @@ button {
     //Following function gets values of the username and password fields and checks to see if they match a hard coded username and password 
       function authenticate(){
         //get input values
-	      bool idkwhyineedthislmao;
+	      bool idkwhyineedthislmao = false;
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if(username == "abcd"){
-		if(password == "password"){
-		alert("Congratulations, u r correct!");
-		return true;
+        if(username != "abcd"){
+		if(password != "password"){
+		alert("god dammit old man, how many times do we need to teach you?");
+		return false;
+		}
+		else{
+			alert("so close, yet so far");
+			return false;
 		}
 	}
 	else{
-          alert("Sorry, password is incorrect.");
-	return false;
+	return true;
 	}
 	      return idkwhyineedthislmao;
       }
