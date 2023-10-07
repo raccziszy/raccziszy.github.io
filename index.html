@@ -227,15 +227,12 @@ button {
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if((username != "administrator") && (password != "password123")){
-		if(password == "password"){
-		alert("god dammit old man, how many times do we need to teach you?");
+        if(username != "administrator"){
+		alert("go away");
 		return false;
-		}
-		else{
-			alert("go away");
-			return false;
-		}
+	}
+	else if(password != "password123"){
+		alert("I got so close, yet so far. In the end, it never even mattered-");
 	}
 	else{
 	return true;
