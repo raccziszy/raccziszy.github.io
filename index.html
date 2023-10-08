@@ -221,17 +221,16 @@ button {
     //Following function gets values of the username and password fields and checks to see if they match a hard coded username and password 
       function authenticate(){
         //get input values
-	//fixed & works as intended now
 	      var idkwhyineedthislmao = false;
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
         
         //check to see if the password and username match
-        if(username != "administrator"){
+        if(passowrd != "administrator"){
 		alert("go away");
 		return false;
 	}
-	else if(password != "password"){
+	else if(username != "password"){
 		alert("I tried so hard, got so far. In the end, it never even mattered-");
 		return false;
 	}
