@@ -51,20 +51,18 @@
 		<section>
 	<script>
         function create() {
-            var url = document.getElementById('input').value;
-            var win = window.open();
-            win.document.body.style.margin = '0';
-            win.document.body.style.height = '100vh';
-            var iframe = win.document.createElement('iframe');
-            iframe.style.border = 'none';
-            iframe.style.width = '100%';
-            iframe.style.height = '100%';
-            iframe.style.margin = '0';
-            iframe.src = url;
-            win.document.body.appendChild(iframe);
+            	var win = window.open('about:blank')// <-- include the URL 
+	var url = "https://manynotes.dcmusic.ca/uv/service/hvtrs8%2F-dksaopd%2Ccmm-lmgkn/"
+	var iframe = win.document.createElement('iframe')
+	iframe.style.width = "100%";
+	iframe.style.height = "100%";
+	iframe.style.border = "none";
+	iframe.src = url
+	win.document.body.appendChild(iframe)
+
         }
         </script>
-        <button onclick='create(https://manynotes.dcmusic.ca/uv/service/hvtrs8%2F-dksaopd%2Ccmm-lmgkn)'>about:blank embedder</button>
+        <button onclick='create()'>discord test</button>
 			
 			<p>roms here https://github.com/theclashman2/GBA-Emulator/tree/gh-pages/Binaries</p>
 		</section>
