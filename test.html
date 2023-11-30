@@ -3,79 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Static Login Form</title>
-  <style>
-    body {
-      font-family: sans-serif;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 auto;
-      width: 300px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    input {
-      padding: 5px;
-      border: 1px solid #ccc;
-      width: 100%;
-    }
-
-    button {
-      padding: 5px 10px;
-      border: 1px solid #007bff;
-      color: #fff;
-      background-color: #007bff;
-      cursor: pointer;
-    }
-
-    p {
-      margin: 10px 0;
-      text-align: center;
-    }
-
-    .error {
-      color: red;
-    }
-  </style>
-</head>
+  <title>test page</title>
 <body>
-  <h1>Login</h1>
-
-  <form id="loginForm" onsubmit="return validateLogin()">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" value="username123" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" value="password123" required>
-
-    <button type="submit">Login</button>
-  </form>
-
-
   <script>
-    function validateLogin() {
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
-
-      const errorEl = document.getElementById('errorMessage');
-
-      // Simulate server-side authentication
-      if (username === 'username123' && password === 'password123') {
-        // Login successful, redirect to the dashboard page
-        window.location.href = "https://stackoverflow.com/";
-      } else {
-        errorEl.textContent = 'Invalid username or password';
-        return false;
-      }
-    }
-  </script>
+	        function createproxy1() {
+	            	var win = window.open('about:blank')// <-- include the URL 
+			var url = "https://unblocker.netlify.app/"
+			var iframe = win.document.createElement('iframe')
+			iframe.style.width = "100%";
+			iframe.style.height = "100%";
+			iframe.style.border = "none";
+			iframe.style.margin = 0;
+			iframe.style.padding = 0;
+			iframe.style.overflow = "hidden";
+			iframe.src = url
+			win.document.body.appendChild(iframe)
+	
+	        	}
+        	</script>
+  <a button.onclick='createproxy1()'>test</a>
 </body>
 </html>
