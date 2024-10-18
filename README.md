@@ -1,2 +1,2 @@
 # bevindooker.github.io
-dont read me
+the only thing i did in middle school
