@@ -44,15 +44,17 @@
 	            	var win = window.open('about:blank')// <-- include the URL 
 			var url = "https://slope.blog/"
 			var iframe = win.document.createElement('iframe')
-			iframe.style.width = "100%";
-			iframe.style.height = "100%";
-			iframe.style.border = "none";
-			iframe.style.frameborder = "0";
-			iframe.style.scrolling = "no";
-			iframe.style = "overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0%;left:0px;right:0px;bottom:0px"
-			iframe.style.margin = 0;
-			iframe.src = url
-			win.document.body.appendChild(iframe)
+			{
+ 				overflow: auto;
+			}
+ 
+			html, body, div, iframe 
+			{
+			 margin: 0px; 
+			 padding: 0px; 
+			 height: 100%; 
+			 border: none;
+			}
 	
 	        	}
         	</script>
